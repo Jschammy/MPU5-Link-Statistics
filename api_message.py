@@ -1,9 +1,5 @@
-"""
-The below class is for easier configuration of the JSON messages sent to the MPU5 API server.
-Once instantiated, the object with take the global argument of WMI_PASSWORD, and API_VARIABLE.
-"""
-
 class APIMessage:
+    """Constructs the JSON payload used to query the WaveRelay API."""
     def __init__(self, wmi_password, api_variable):
         self.wmi_password = wmi_password
         self.api_variable = api_variable

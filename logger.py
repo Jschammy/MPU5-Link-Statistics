@@ -3,6 +3,7 @@ import os
 from datetime import datetime, date, time
 
 class FileLogger:
+    """Constructs a CSV file based on a naming convention then logs radio data to the file."""
     def __init__(self):
         self.link_statistics_csv = str(f"{date.today()}-MPU5-Link-Statistics.csv")
         self.csv_headers = ["Date", "Time", "Local Radio", "Remote Node", "Remote Node IP Address", "Remote Radio", "Aggregate SNR", "Chain 1 SNR", "Chain 2 SNR", "Chain 3 SNR"]
